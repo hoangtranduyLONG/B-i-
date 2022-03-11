@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a: <input id="a" type="text">
+Nhập b: <input id="b" type="text">
+Nhập c: <input id="c" type="text">
+<h3 id="result"></h3>
+<button onclick="maxa()">Tìm số lớn nhất</button>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let c = document.getElementById("c");
+    function maxa() {
+        a = +a.value;
+        b = +b.value;
+        c = +c.value;
+        let max = a;
+        if (max < b) {
+            max = b;
+        }
+        if (max < c) {
+            max = c;
+        }
+        document.getElementById("result").innerText = "Số lớn nhất là: " + max;
+    }
+    </script>
+</body>
+</html>
